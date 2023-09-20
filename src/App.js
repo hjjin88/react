@@ -19,15 +19,15 @@ function App() {
   return (
     <Routes>
       {/* <Route path="/" element={<MainPage />} /> */}
-      <Route path="/" element={<WrapperHome><MainPage /></WrapperHome>} />
-      <Route path="/UnknowBtn" element={<WrapperHome><UnknowBtn /></WrapperHome>} />
-      <Route path="/MetaMainPage" element={<WrapperMeta><MetaMainPage /></WrapperMeta>} />
+      <Route path="react/" element={<WrapperHome><MainPage /></WrapperHome>} />
+      <Route path="react/UnknowBtn" element={<WrapperHome><UnknowBtn /></WrapperHome>} />
+      <Route path="react/MetaMainPage" element={<WrapperMeta><MetaMainPage /></WrapperMeta>} />
 
-      <Route path="/test" element={<TestPage />} />
-      <Route path="/Button" element={<WrapperHome><Button /></WrapperHome>} />
-      <Route path="/Guide" element={<WrapperHome><Guide /></WrapperHome>} />
+      <Route path="react/test" element={<TestPage />} />
+      <Route path="react/Button" element={<WrapperHome><Button /></WrapperHome>} />
+      <Route path="react/Guide" element={<WrapperHome><Guide /></WrapperHome>} />
 
-      <Route path="/*" element={<Navigate to="/" />} />
+      <Route path="react/*" element={<Navigate to="/" />} />
     </Routes>
   );
 }
